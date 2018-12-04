@@ -1,7 +1,6 @@
 @import "config";
 @import "menu";
 
-
 * {
   box-sizing: border-box;
 }
@@ -83,31 +82,30 @@ main {
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
-
   .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
   }
-  
+
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
   }
-  
+
   .job-1 {
     grid-area: job1;
   }
-  
+
   .job-2 {
     grid-area: job2;
   }
-  
+
   .job-3 {
     grid-area: job3;
   }
-  
+
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
@@ -115,7 +113,49 @@ main {
   }
 }
 
-#main-footer{
+// Work/Projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+// Button Styles
+.btn{
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover{
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+.btn-dark{
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light{
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+}
+
+#main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
