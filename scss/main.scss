@@ -115,13 +115,19 @@ main {
 
 // Work/Projects
 .projects {
+  // background: yellow;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem;
+  // justify-content: center;
 
   .item {
     background: darken($primary-color, 10);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: space-around;
 
     .carousel {
       width: 100%;
@@ -132,7 +138,7 @@ main {
       position: relative;
 
       .carouselBtn {
-        z-index: 2;
+        z-index: 1;
         background: $primary-color;
         opacity: 0.9;
         border: none;
@@ -157,6 +163,18 @@ main {
         // }
       }
     }
+
+    .btnContainer {
+      // background: yellow;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    // a {
+    //   // justify-self: flex-end;
+    // }
   }
 }
 
