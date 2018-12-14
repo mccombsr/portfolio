@@ -39,6 +39,10 @@
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .menu-branding {
@@ -63,6 +67,21 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+
+    .carousel {
+      height: 450;
+    }
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.7rem;
+  }
+
+  .contacts {
+    width: 95vw;
+    word-wrap: break-word;
   }
 }
 
@@ -80,5 +99,16 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.7rem;
+  }
+
+  .contacts {
+    width: 75vw;
+    word-wrap: break-word;
   }
 }
