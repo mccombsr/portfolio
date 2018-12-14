@@ -31,6 +31,9 @@
           <li class="nav-item">
             <a href="about.html" class="nav-link"> About Me </a>
           </li>
+          <li class="nav-item">
+            <a href="skills.html" class="nav-link"> Skills </a>
+          </li>
           <li class="nav-item current">
             <a href="work.html" class="nav-link"> My Work </a>
           </li>
@@ -46,54 +49,90 @@
       <h2 class="sm-heading">Here are some of my projects...</h2>
       <div class="projects">
         <div class="item">
-          <a href="#!">
-            <img src="img/projects/image-1.PNG" alt="iclean" />
-          </a>
-          <a href="#!" class="btn-light">
-            <i class="fas fa-eye"></i> Project
-          </a>
-          <a href="#!" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
+          <h1 class="title">iClean</h1>
+          <div class="carousel">
+            <button class="carouselBtn" onclick="plusDivs(-1)">&#10094;</button>
+            <img src="img/projects/image-1.PNG" alt="iclean" class="images"/>
+            <img src="img/projects/image-2.PNG" alt="iclean" class="images"/>
+            <img src="img/projects/image-3.PNG" alt="iclean" class="images"/>
+            <img src="img/projects/image-4.PNG" alt="iclean" class="images"/>
+            <button class="carouselBtn" onclick="plusDivs(+1)">&#10095;</button>
+          </div>
+            <p>
+                Basic Web Application to allow small/ independent cleaning businesses to post their information where potential clients can search for house cleaners by zip code.
+                <ul>
+                  <li>Built using ReactJS and NodeJS</li>
+                  <li>Managed state using Redux</li>
+                  <li>Handled user login with Auth0</li>
+                  <li>Used PostgreSQL for Database</li>
+                  <li>Styled using SASS, FlexBox and CSS Grid</li>
+                  <li>Set up Amazon S3 and Dropzone for storing business logos</li>
+                </ul>
+            </p>
+            <div class="btnContainer">
+              <a
+                href="https://icleantoday.com/#/"
+                class="btn-light"
+                target="_blank"
+              >
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/mccombsr/Personal-Project"
+                class="btn-dark"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
+
         </div>
+        <hr>
         <div class="item">
-          <a href="#!">
-            <img src="img/projects/image-1.PNG" alt="iclean" />
-          </a>
-          <a href="#!" class="btn-light">
-            <i class="fas fa-eye"></i> Project
-          </a>
-          <a href="#!" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
+          <h1 class="title">TeachTools</h1>
+          <div class="carousel">
+            <button class="carouselBtn" onclick="plusDivs2(-1)">&#10094;</button>
+            <img src="../dist/img/group-4.PNG" alt="Teach Tools" class="images2"/>
+            <img src="../dist/img/group-3.PNG" alt="Teach Tools" class="images2"/>
+            <img src="../dist/img/group-2.PNG" alt="Teach Tools" class="images2"/>
+            <img src="../dist/img/group-1.PNG" alt="Teach Tools" class="images2"/>
+            <button class="carouselBtn" onclick="plusDivs2(+1)">&#10095;</button>
+          </div>
+            <p>
+              Web Application geared towards assisting teachers in providing a fun way to review materials taught. Inspired by Jeopardy, the application allows teachers to create trivia games with categories, set up teams and assign points for questions answered correctly.
+                <ul>
+                  <li>Built using ReactJS and NodeJS</li>
+                  <li>State shared across components with Redux</li>
+                  <li>Authentication handled with B-crypt</li>
+                  <li>Socket.io used to set up rooms by game</li>
+                  <li>Database managed with PostgreSQL</li>
+                  <li>Styled using SASS, FlexBox, CSS Grid, and Ant-Design</li>
+                </ul>
+            </p>
+            <div class="btnContainer">
+              <a
+                href="https://www.teach-tools.com/"
+                class="btn-light"
+                target="_blank"
+              >
+                <i class="fas fa-eye"></i> Project
+              </a>
+              <a
+                href="https://github.com/TTTMLMGAMF/Group"
+                class="btn-dark"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> Github
+              </a>
+            </div>
         </div>
-        <div class="item">
-          <a href="#!">
-            <img src="img/projects/image-1.PNG" alt="iclean" />
-          </a>
-          <a href="#!" class="btn-light">
-            <i class="fas fa-eye"></i> Project
-          </a>
-          <a href="#!" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
-        </div>
-        <div class="item">
-          <a href="#!">
-            <img src="img/projects/image-1.PNG" alt="iclean" />
-          </a>
-          <a href="#!" class="btn-light">
-            <i class="fas fa-eye"></i> Project
-          </a>
-          <a href="#!" class="btn-dark">
-            <i class="fab fa-github"></i> Github
-          </a>
-        </div>
+        
       </div>
     </main>
 
-    <footer id="main-footer">Copyright &copy; 2018</footer>
+    <footer id="main-footer">Created by Ryan McCombs</footer>
 
     <script src="js/main.js"></script>
+    <script src="js/modalCarousle.js"></script>
   </body>
 </html>
