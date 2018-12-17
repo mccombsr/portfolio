@@ -231,7 +231,11 @@ main {
         width: 80vw;
         height: auto;
         border: 3px #fff solid;
-        position: absolute; }
+        position: absolute;
+        overflow: hidden; }
+      .projects .item .carousel .group {
+        width: 100%;
+        height: 100%; }
     .projects .item p {
       width: 70%;
       margin: 3rem; }
